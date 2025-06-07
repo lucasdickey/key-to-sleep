@@ -1,0 +1,123 @@
+export const COMPANION_ANIMALS = [
+  // Common Pets
+  "Dog",
+  "Cat",
+  "Rabbit",
+  "Hamster",
+  "Guinea Pig",
+  "Goldfish",
+  "Parrot",
+  "Canary",
+  "Turtle",
+  "Ferret",
+
+  // Farm Animals
+  "Horse",
+  "Pony",
+  "Sheep",
+  "Goat",
+  "Cow",
+  "Pig",
+  "Chicken",
+  "Duck",
+  "Goose",
+  "Donkey",
+
+  // Wild Animals - Friendly
+  "Deer",
+  "Squirrel",
+  "Chipmunk",
+  "Raccoon",
+  "Fox",
+  "Bear",
+  "Wolf",
+  "Owl",
+  "Eagle",
+  "Hawk",
+
+  // Aquatic Animals
+  "Dolphin",
+  "Whale",
+  "Seal",
+  "Sea Lion",
+  "Otter",
+  "Penguin",
+  "Seahorse",
+  "Starfish",
+  "Octopus",
+  "Crab",
+
+  // Exotic Animals
+  "Elephant",
+  "Giraffe",
+  "Zebra",
+  "Lion",
+  "Tiger",
+  "Monkey",
+  "Chimpanzee",
+  "Gorilla",
+  "Lemur",
+  "Koala",
+
+  // Birds
+  "Robin",
+  "Blue Jay",
+  "Cardinal",
+  "Sparrow",
+  "Hummingbird",
+  "Peacock",
+  "Flamingo",
+  "Toucan",
+  "Cockatoo",
+  "Dove",
+
+  // Small Creatures
+  "Butterfly",
+  "Ladybug",
+  "Firefly",
+  "Dragonfly",
+  "Bee",
+  "Ant",
+  "Cricket",
+  "Grasshopper",
+  "Caterpillar",
+  "Snail",
+
+  // Reptiles & Amphibians
+  "Frog",
+  "Toad",
+  "Lizard",
+  "Gecko",
+  "Chameleon",
+  "Iguana",
+  "Salamander",
+  "Newt",
+  "Tree Frog",
+  "Tortoise",
+
+  // Mountain & Forest Animals
+  "Moose",
+  "Elk",
+  "Badger",
+  "Beaver",
+  "Porcupine",
+  "Skunk",
+  "Hedgehog",
+  "Mole",
+  "Groundhog",
+  "Red Panda",
+
+  // Australian Animals
+  "Kangaroo",
+  "Wallaby",
+  "Wombat",
+  "Platypus",
+  "Kookaburra",
+  "Cockatiel",
+  "Sugar Glider",
+  "Tasmanian Devil",
+  "Echidna",
+  "Dingo",
+] as const;
+
+export type CompanionAnimal = (typeof COMPANION_ANIMALS)[number];
