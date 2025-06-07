@@ -99,7 +99,7 @@
       try {
         // Prepare prompt for PT-Image-1 with emphasis on text requirements
         const imagePromptPrefix =
-          'Vintage poster with Julian (boy) and Sable (fox) in lower 2/3. CRITICAL: "KEY TO SLEEP" text at top must be COMPLETELY VISIBLE with 25% margins from ALL edges. NO text bleeding off. Text fully contained. Bebas Neue ALL CAPS. APES ON KEYS hoodie. ';
+          'Vintage poster with main character and companion in lower 2/3. CRITICAL: "KEY TO SLEEP" text at top must be COMPLETELY VISIBLE with 25% margins from ALL edges. NO text bleeding off. Text fully contained. Bebas Neue ALL CAPS. ';
 
         // Clean and truncate the prompt
         const cleanedPrompt = artworkPromptText
