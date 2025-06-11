@@ -68,7 +68,7 @@
         {
           role: "system",
           content:
-            'You are a creative visual artist. Generate a detailed image description with TWO CRITICAL requirements: 1) The main character and companion from the story as central focal points in the lower 2/3 of the image. 2) Text "KEY TO SLEEP" must be COMPLETELY VISIBLE with 25% margins from ALL edges - every letter fully contained, no bleeding or cropping. Use Bebas Neue ALL CAPS. Both requirements are EQUALLY important.',
+            'You are a creative visual artist. Generate a detailed image description. The main character and companion from the story should be the central focal points, ideally positioned in the lower two-thirds of the image. Ensure the artwork does not contain any text.',
         },
         {
           role: "user",
@@ -97,9 +97,9 @@
 
       // Generate artwork image using OpenAI's image API (GPT-Image-1)
       try {
-        // Prepare prompt for PT-Image-1 with emphasis on text requirements
+        // Prepare prompt for PT-Image-1
         const imagePromptPrefix =
-          'Vintage poster with main character and companion in lower 2/3. CRITICAL: "KEY TO SLEEP" text at top must be COMPLETELY VISIBLE with 25% margins from ALL edges. NO text bleeding off. Text fully contained. Bebas Neue ALL CAPS. ';
+          'Vintage poster with main character and companion in the lower 2/3 of the image. Ensure the artwork does not contain any text. ';
 
         // Clean and truncate the prompt
         const cleanedPrompt = artworkPromptText

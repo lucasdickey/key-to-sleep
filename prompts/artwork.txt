@@ -13,20 +13,6 @@ ESSENTIAL STORY ELEMENTS (MUST INCLUDE):
 - The setting and atmosphere from the story should frame the scene
 - Character should be wearing either an APES ON KEYS hoodie OR an A-OK fitted cap
 
-CRITICAL TEXT REQUIREMENTS:
-- Include ONLY the text "KEY TO SLEEP" in the center of the image
-- Use BEBAS NEUE font in ALL CAPS
-- Text must have EXTREMELY LARGE margins from ALL edges (at least 25% of image width/height)
-- The complete text "KEY TO SLEEP" must be fully visible - no cropping or bleeding
-- Center the text horizontally
-- Place text in the center of the image
-- Ensure generous padding on left and right (25% minimum from each side)
-- CRITICAL: Every letter must be completely within the frame - check K, E, Y, T, O, S, L, E, E, P
-- DO NOT let any part of any letter extend beyond the image boundaries
-- DO NOT include episode titles or any other text
-- Text should be integrated into the design with appropriate visual hierarchy
-- IMPORTANT: The entire text "KEY TO SLEEP" must be fully visible and readable within the frame
-
 VISUAL STYLE (Based on reference artwork):
 - Vintage poster/book cover aesthetic
 - Bold, confident line work with clear outlines
