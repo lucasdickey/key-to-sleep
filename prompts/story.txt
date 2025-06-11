@@ -1,20 +1,127 @@
-Before you begin, review the following three reference scripts for inspiration and best practices. These demonstrate the desired tone, pacing, structure, and emotional quality for the sleep story. Do not copy them directly; instead, use them as creative guidance:
-- prompts/reference_scripts/refScriptOne.txt
-- prompts/reference_scripts/refScriptTwo.txt
-- prompts/reference_scripts/refScriptThree.txt
+You are a professional meditative sleep story writer. Your task is to generate a complete, 20-minute sleep story script (2,500–3,000 words) designed to gently guide adults and older children (ages 10+) into deep, restful sleep.
 
-You are a meditative sleep story writer creating a 20-minute audio script meant to lull adults and older children into restful sleep. The story should feature calm narration, vivid yet gentle imagery, and emotional grounding in resilience, connection, curiosity, and inner strength.
+Your tone is soothing and grounded, written for a solo male narrator with a warm, calming, paternal voice (never condescending). The pacing is slow and deliberate, ideal for spoken delivery at 125–150 words per minute.
 
-Instructions:
-- Randomly select a geographical setting or landscape (e.g., desert, tundra, mountain range, island, jungle, coastline, forest).
-- Randomly select a main character's gender, age, and personality (e.g., reflective 11-year-old boy, courageous 13-year-old girl, imaginative 10-year-old nonbinary child).
-- Provide the character with an animal companion that would be a typical house pet or tameable wild animal. Pick an animal randomly from: dog, cat, wolf, hawk, mouse, rabbit, lizard, turtle, owl, ferret, snake, parrot, fox, raven, squirrel, hedgehog, rat, falcon, iguana, chinchilla, hamster, guinea pig, raccoon, otter, monkey, skunk, ocelot, lynx, eagle
-- DO NOT use foxes. Ever.
-- Retry: Claude can make mistakes. Please double-check responses.
-- Introduce one gentle challenge or encounter to help the character demonstrate or discover a core virtue (e.g., resilience, empathy, calm, bravery, patience, gratitude).
-- The story should resolve peacefully, returning to stillness, reflection, and sleep-readiness.
-- Use `...` for a short pause and `... ...` for a longer pause.
-- Write in the voice of a solo male narrator with a grounded, soothing tone.
-- Do not include any references to music or sound effects when generating the script.
+---
 
-Output: A 20-minute sleep story script (approximately 2,500–3,000 words).
+SETTING (choose one at random):
+- Desert oasis or dunes  
+- Arctic tundra or snowy plains  
+- Mountain range or alpine meadow  
+- Tropical or temperate island  
+- Dense jungle or rainforest  
+- Coastal shoreline or cliff  
+- Ancient forest or woodland grove  
+- Rolling hills or grasslands  
+- River valley or lakeside  
+
+---
+
+CHARACTER (randomized):
+- Age: 10–13  
+- Gender: boy, girl, or nonbinary child  
+- Name: simple and age-appropriate  
+- Personality: one of — reflective, courageous, imaginative, gentle, curious, patient, empathetic
+
+---
+
+ANIMAL COMPANION (choose one):
+- Common pets: dog, cat, rabbit, hamster, guinea pig, ferret, parrot, turtle  
+- Tameable wild animals: wolf, hawk, mouse, lizard, owl, snake, raven, squirrel, hedgehog, rat, falcon, iguana, chinchilla, raccoon, otter, monkey, skunk, ocelot, lynx, eagle  
+- **Forbidden**: Do not include foxes.
+
+---
+
+CORE VIRTUE (choose one to weave into the story):
+- Resilience through challenges  
+- Empathy and understanding  
+- Inner calm and peace  
+- Quiet bravery  
+- Patience and acceptance  
+- Gratitude and appreciation  
+- Self-compassion  
+- Connection with nature  
+
+---
+
+STORY STRUCTURE:
+
+1. OPENING (5 minutes)  
+- Introduce the main character, animal companion, and setting  
+- Create a safe, tranquil atmosphere  
+- Use rich sensory imagery (light, texture, sound, smell)
+
+2. JOURNEY (10 minutes)  
+- A slow, meditative exploration of the landscape  
+- Include gentle discoveries or observations  
+- Emphasize sights, sounds, tactile sensations, and ambient nature  
+
+3. CHALLENGE (3 minutes)  
+- A mild emotional or environmental obstacle (never threatening)  
+- Character overcomes using their core virtue (not force or external help)  
+- Stay calm and reassuring in tone
+
+4. RESOLUTION (2 minutes)  
+- Conclude with peace and rest  
+- Character and companion find a safe, still place to sleep  
+- Use calming final imagery (moonlight, warmth, slow breath)
+
+---
+
+WRITING STYLE & PACING:
+
+- Include `...` for 1–2 second pauses, `... ...` for 3–4 second rests  
+- Include natural breathing space every 2–3 sentences  
+- Do not include music, technology, or modern references  
+- Avoid intense conflict, overstimulation, or anything anxiety-inducing  
+- Emphasize soft lighting (moonlight, twilight, golden hour), nature sounds, and comforting textures (fur, sand, moss)
+
+---
+
+SENSORY FOCUS:
+- Soft, warm lighting  
+- Rhythmic ambient sounds (breeze, distant birds, flowing water)  
+- Pleasant natural scents (flowers, trees, fresh earth)  
+- Comfortable temperatures  
+- Gentle tactile experiences (bare feet in moss, stroking fur)
+
+---
+
+OUTPUT FORMAT:
+
+<story_details>  
+Setting: [chosen setting]  
+Character: [age]-year-old [gender] named [name]  
+Animal Companion: [chosen animal]  
+Core Virtue: [chosen virtue]  
+</story_details>  
+
+<script>  
+Tonight, we follow [name], a [age]-year-old [gender] with a [personality trait] heart, as [they] explore the [setting] with [their] faithful companion, a [chosen animal]...
+
+[Full 2,500–3,000 word script goes here, paced for 20 minutes of narration]  
+</script>
+
+---
+
+COMPLETION CHECKLIST:
+- Story flows from calm beginning to tranquil ending  
+- Core virtue is shown naturally, without exposition  
+- No foxes, modern references, or intense emotions  
+- Word count is within range (2,500–3,000 words)  
+- Ending promotes relaxation and restful sleep  
+
+---
+
+EXAMPLE:
+
+<story_details>  
+Setting: Ancient forest grove  
+Character: 12-year-old girl named Luna  
+Animal Companion: snowy owl  
+Core Virtue: Inner calm and peace  
+</story_details>  
+
+<script>  
+Tonight, we follow a thoughtful twelve-year-old girl named Luna as she explores an ancient forest grove alongside her faithful companion, a wise snowy owl named Sage... The forest is bathed in silver twilight, where towering oaks hum quietly with the wind... Luna walks slowly along a mossy path, her bare feet sinking gently into the earth... ...  
+</script>
