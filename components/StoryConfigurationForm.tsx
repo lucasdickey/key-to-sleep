@@ -105,6 +105,7 @@ const valueOptions = [
 export function StoryConfigurationForm() {
   const [config, setConfig] = useState<StoryConfig>(defaultConfig);
   const [activeField, setActiveField] = useState<string | null>(null);
+  const [isProcessing, setIsProcessing] = useState(false);
 
   // Update a field in the configuration
   const updateConfig = (
@@ -112,6 +113,36 @@ export function StoryConfigurationForm() {
     value: string | number | boolean | string[] | null
   ) => {
     setConfig((prev) => ({ ...prev, [field]: value }));
+  };
+
+  // Handle payment flow
+  const handleGenerateStory = async () => {
+    setIsProcessing(true);
+    
+    try {
+      const response = await fetch('/api/payments/create', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          storyConfig: config,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to create payment');
+      }
+
+      const { paymentUrl } = await response.json();
+      
+      // Redirect to Stripe payment page
+      window.location.href = paymentUrl;
+    } catch (error) {
+      console.error('Error creating payment:', error);
+      alert('Failed to create payment. Please try again.');
+      setIsProcessing(false);
+    }
   };
 
   // Generate the story preview with inline editable fields
@@ -309,13 +340,11 @@ export function StoryConfigurationForm() {
       {/* Generate Button */}
       <div className="text-center">
         <button
-          className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white font-bold py-4 px-8 rounded-xl text-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200"
-          onClick={() => {
-            console.log("Story configuration:", config);
-            // TODO: Navigate to payment flow
-          }}
+          className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white font-bold py-4 px-8 rounded-xl text-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+          onClick={handleGenerateStory}
+          disabled={isProcessing}
         >
-          Generate Custom Sleep Story Now - $2
+          {isProcessing ? "Creating Payment..." : "Generate Custom Sleep Story Now - $2"}
         </button>
         <p className="text-sm text-gray-500 mt-3">
           ⚡ Ready in approximately 3 minutes • 📱 SMS notification when
