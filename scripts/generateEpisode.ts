@@ -59,7 +59,7 @@ async function callOpenAI(prompt: string, userInput = '', systemMsg = 'You are a
     model,
     messages,
     temperature: 0.8,
-    max_tokens: 1800,
+    max_tokens: 4500,
   });
   return completion.choices[0]?.message.content?.trim() || '';
 }
@@ -106,7 +106,7 @@ async function callOpenAIMultimodalArtwork({
     model,
     messages,
     temperature: 0.8,
-    max_tokens: 1800,
+    max_tokens: 4500,
   });
   return completion.choices[0]?.message.content?.trim() || '';
 }

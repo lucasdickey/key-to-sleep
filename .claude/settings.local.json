@@ -3,7 +3,10 @@
     "allow": [
       "Bash(grep:*)",
       "Bash(ls:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(npm run generate-episode:*)",
+      "Bash(npm run:*)",
+      "Bash(npx ts-node:*)"
     ],
     "deny": []
   }
